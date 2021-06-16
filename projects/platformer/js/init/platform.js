@@ -34,12 +34,24 @@
          * asset, giving it a scaleX and scaleY of 2 will stretch it across the 
          * bottom of the game.
          */
-        createPlatform(0, game.world.height - 32, 3, 2);    // DO NOT DELETE
+        /*
+createPlatform(x, y, scaleX, scaleY);
+ 
+x: The x coordinate for the platform.
+y: The y coordinate for the platform.
+scaleX: OPTIONAL The scale factor on the x-axis, this value will stretch the platform in width.
+scaleY: OPTIONAL The scale factor on the y-axis, this value will stretch the platform in height.
+*/
 
+        createPlatform(0, game.world.height - 32, 3, 2);    // DO NOT DELETE
+        createPlatform(400, 460);   
+        createPlatform(300, 200, 0.3);     
+        createPlatform(500, 500, 0.3, 10);
+        
         // example:
         createPlatform(400, 250);
         createPlatform(170, 460, 0.5);
-        
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     }

@@ -31,14 +31,28 @@
      *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
      */ 
     function init(game) {
-        let createCollectable = collectable.create;
+        let createCollectable = collectable.create; 
+        /*
+createCollectable(type, x, y, gravity, bounce);
+
+type: The type of the collectable. 
+x: The x coordineate for the collectable.
+y: The y coordineate for the collectable.
+gravity: OPTIONAL The gravitational pull on the collectable.
+bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
+*/
+
 
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
         createCollectable(type.steve, 200, 170, 6, 0.7);
-        
+        createCollectable(type.max);        // worth 20 points
+        createCollectable(type.steve);     // worth 30 points
+        createCollectable(type.grace);     // worth 40 points
+        createCollectable(type.kennedi);   // worth 50 points
+
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
