@@ -24,10 +24,16 @@
     function init(game) {
         let createCannon = cannon.create;
        /*
+       /*
+createCannon(type, position, delay);
+
+type: The type of cannon to be made. This can be one of the following Strings: "top", "bottom", "left", or "right"
+position: The position coordinate for the cannon along the wall it is placed.
+delay: OPTIONAL The number of milliseconds to wait before firing the first projectile
+
+*/
 
 
-
-}
 
 
 
@@ -35,6 +41,7 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // example: 
+
         createCannon("top", 450);
         createCannon("bottom", 450);
         createCannon("top", 450); // a cannon on the top of the screen, located at x = 450
